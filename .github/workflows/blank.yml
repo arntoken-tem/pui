@@ -1,4 +1,4 @@
-name: MarcelCyan
+name: win
 
 on: workflow_dispatch
 
@@ -37,7 +37,7 @@ jobs:
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Make Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
-    - name: Connect To Your RDP CPU 5 Core - 8GB Ram - 500 SSD.
+    - name: Connect To Your RDP CPU 2 Core - 7GB Ram - 256 SSD.
       run: cmd /c start.bat
     - name: Successfully Created! You Can Close Tabs Now.
       run: cmd /c loop.bat
